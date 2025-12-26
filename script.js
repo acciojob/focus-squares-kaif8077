@@ -1,7 +1,6 @@
 const squares = document.querySelectorAll(".square");
 
 squares.forEach((square) => {
-
   square.addEventListener("mouseenter", () => {
     squares.forEach((s) => {
       if (s !== square) {
@@ -12,8 +11,7 @@ squares.forEach((square) => {
 
   square.addEventListener("mouseleave", () => {
     squares.forEach((s) => {
-      s.style.backgroundColor = "#E6E6FA"; // Lavender
+      s.style.backgroundColor = "#E6E6FA"; // Reset to Lavender
     });
   });
-
 });
